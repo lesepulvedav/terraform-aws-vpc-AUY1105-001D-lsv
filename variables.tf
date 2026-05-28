@@ -35,7 +35,7 @@ variable "subnets_cidr" {
 variable "sg_alb_name" {
   description = "Name of the Application Load Balancer"
   type        = string
-  default     = "sg-alb"
+  default     = "alb-sg"
 }
 
 # ─── SG EC2 ───
@@ -43,5 +43,5 @@ variable "sg_alb_name" {
 variable "sg_web_name" {
   description = "Name of the EC2 Security Group"
   type        = string
-  default     = "sg-web"
+  default     = "web-sg"
 }
