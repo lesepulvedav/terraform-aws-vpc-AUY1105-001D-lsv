@@ -1,3 +1,9 @@
+commit 15db2e5f8169d0c7355c1661f9f6224762e4f875 (HEAD -> main, tag: v0.2.2, origin/main)
+Author: lesepulvedav <le.sepulveda@duocuc.cl>
+Date:   Wed Jul 1 03:26:10 2026 -0400
+
+    docs: actualización de changelog v0.2.2
+
 commit 9b9a7960998914f4c8fa664e504e032b5cbbc620 (HEAD -> main)
 Author: lesepulvedav <le.sepulveda@duocuc.cl>
 Date:   Wed Jul 1 03:16:28 2026 -0400
