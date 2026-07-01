@@ -1,24 +1,17 @@
-# Changelog
+commit 4ee5659e12277a94fde4673216f549d40f1ec78e (HEAD -> main, tag: v0.2.1, origin/main)
+Author: lesepulvedav <le.sepulveda@duocuc.cl>
+Date:   Wed Jul 1 02:34:14 2026 -0400
 
-Este archivo registra los cambios del módulo VPC siguiendo el formato Keep a Changelog y la semántica de versiones Semantic Versioning (SemVer).
+    v0.2.1 - Se configuran subredes y cidr
 
-## [0.2.0] - 2026-05-28
+commit 43890eb5a48792d7990b34288a19b8d7df071f3e (tag: v0.2.0)
+Author: lesepulvedav <le.sepulveda@duocuc.cl>
+Date:   Thu May 28 17:54:50 2026 -0400
 
-### Changed
-- Se actualizó el nombre por defecto de los security groups para evitar prefijos no válidos (antes: `sg-alb`, `sg-web`; ahora: `alb-sg`, `web-sg`).
+    Se hace carga de versión 0.2.0
 
-### Fixed
-- Se corrigió el problema de nombres de security groups que iniciaban con `sg-`, lo que provocaba errores de validación por parte de AWS.
+commit 1e6a1a8ccc192da02c7d620a3a3f695e1667b8b3 (tag: v0.1.0)
+Author: lesepulvedav <le.sepulveda@duocuc.cl>
+Date:   Thu May 28 17:08:00 2026 -0400
 
-## [0.1.0] - 2026-05-28
-
-### Added
-- Definición inicial de variables en variables.tf.
-- Creación de salidas en outputs.tf.
-- Creación de recursos en el archivo main.tf.
-- Documentación generada automáticamente con terraform-docs.
-
-### Useful Git commands
-- `git log --pretty=format:'%h %ad %s' --date=short`
-- `git log v0.1.0..v0.2.0 --pretty=format:'- %s'`
-- `git log --oneline --decorate --graph`
+    Se hace carga de archivos para módulo en versión 0.1.0
