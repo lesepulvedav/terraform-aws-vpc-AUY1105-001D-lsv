@@ -1,3 +1,10 @@
+commit 2221d57097a421222da199a09aca5a8b7d72d1e9 (HEAD -> main)
+Author: lesepulvedav <le.sepulveda@duocuc.cl>
+Date:   Wed Jul 1 03:55:18 2026 -0400
+
+    v0.2.4
+    fix: Se soluciona problema con output de subredpublica
+
 commit 1506370811baed72008704dd20ce0b2854ed45e7 (HEAD -> main)
 Author: lesepulvedav <le.sepulveda@duocuc.cl>
 Date:   Wed Jul 1 03:39:26 2026 -0400
