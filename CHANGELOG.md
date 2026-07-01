@@ -1,8 +1,16 @@
-commit 4ee5659e12277a94fde4673216f549d40f1ec78e (HEAD -> main, tag: v0.2.1, origin/main)
+commit 9b9a7960998914f4c8fa664e504e032b5cbbc620 (HEAD -> main)
+Author: lesepulvedav <le.sepulveda@duocuc.cl>
+Date:   Wed Jul 1 03:16:28 2026 -0400
+
+    v0.2.2
+    fix: se configura zonas de disponibilidad
+
+commit 4ee5659e12277a94fde4673216f549d40f1ec78e (tag: v0.2.1, origin/main)
 Author: lesepulvedav <le.sepulveda@duocuc.cl>
 Date:   Wed Jul 1 02:34:14 2026 -0400
 
-    v0.2.1 - Se configuran subredes y cidr
+    v0.2.1
+    fix: Se configuran subredes y cidr
 
 commit 43890eb5a48792d7990b34288a19b8d7df071f3e (tag: v0.2.0)
 Author: lesepulvedav <le.sepulveda@duocuc.cl>
