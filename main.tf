@@ -13,7 +13,7 @@ resource "aws_vpc" "main" {
 # ─── SUBNETS ───────────────────────────────────────────────────────────────────
 resource "aws_subnet" "public" {
   vpc_id                  = aws_vpc.main.id
-  cidr_block              = var.subnets_cidr[0]
+  cidr_block              = var.subnetpublic1_cidr
   availability_zone       = var.availability_zones[0]
   map_public_ip_on_launch = true
 
@@ -25,7 +25,7 @@ resource "aws_subnet" "public" {
 # Segunda subred pública requerida por el ALB (mínimo 2 AZs)
 resource "aws_subnet" "public_2" {
   vpc_id                  = aws_vpc.main.id
-  cidr_block              = var.subnets_cidr[1]
+  cidr_block              = var.subnetpublic2_cidr
   availability_zone       = var.availability_zones[1]
   map_public_ip_on_launch = true
 
@@ -36,7 +36,7 @@ resource "aws_subnet" "public_2" {
 
 resource "aws_subnet" "private" {
   vpc_id            = aws_vpc.main.id
-  cidr_block        = var.subnets_cidr[2]
+  cidr_block        = var.subnetprivate1_cidr
   availability_zone = var.availability_zones[1]
 
   tags = {

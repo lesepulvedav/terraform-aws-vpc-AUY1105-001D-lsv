@@ -24,10 +24,22 @@ variable "availability_zones" {
 }
 # ─── SUBNETS ───
 
-variable "subnets_cidr" {
-  description = "Lista de CIDR blocks para las subnets"
-  type        = list(string)
-  default     = ["10.0.1.0/24", "10.0.3.0/24", "10.0.2.0/24"]
+variable "subnetpublic1_cidr" {
+  description = "Subnet CIDR block for the first public subnet"
+  type        = string
+  default     = "10.0.1.0/24"
+}
+
+variable "subnetpublic2_cidr" {
+  description = "Subnet CIDR block for the second public subnet"
+  type        = string
+  default     = "10.0.3.0/24"
+}
+
+variable "subnetprivate1_cidr" {
+  description = "Subnet CIDR block for the first private subnet"
+  type        = string
+  default     = "10.0.2.0/24"
 }
 
 # ─── SG ALB ───

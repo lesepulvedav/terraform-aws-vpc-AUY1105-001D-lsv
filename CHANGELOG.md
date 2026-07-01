@@ -1,22 +1,24 @@
-**Changelog**
+# Changelog
 
-Este archivo contiene los cambios realizados en el proyecto de infraestructura como código utilizando Terraform. Sigue el formato Keep a Changelog y respeta la semántica de versiones Semantic Versioning.
+Este archivo registra los cambios del módulo VPC siguiendo el formato Keep a Changelog y la semántica de versiones Semantic Versioning (SemVer).
 
-[0.2.0] - 2026-05-28
-Cambiado
+## [0.2.0] - 2026-05-28
 
+### Changed
 - Se actualizó el nombre por defecto de los security groups para evitar prefijos no válidos (antes: `sg-alb`, `sg-web`; ahora: `alb-sg`, `web-sg`).
 
-Arreglado
+### Fixed
+- Se corrigió el problema de nombres de security groups que iniciaban con `sg-`, lo que provocaba errores de validación por parte de AWS.
 
-- Corrección para evitar que los nombres de security groups comiencen con `sg-`, lo que provocaba errores de validación por parte de AWS.
+## [0.1.0] - 2026-05-28
 
-[0.1.0]
-Agregado
+### Added
+- Definición inicial de variables en variables.tf.
+- Creación de salidas en outputs.tf.
+- Creación de recursos en el archivo main.tf.
+- Documentación generada automáticamente con terraform-docs.
 
-Definición inicial de variables en variables.tf.
-Creación de salidas en outputs.tf
-Creación de recursos en archivo main.tf
-Documentación generada automáticamente con terraform-docs.
-
-Nota: Este archivo se mantendrá actualizado con cada cambio significativo para mejorar la trazabilidad y la colaboración.
+### Useful Git commands
+- `git log --pretty=format:'%h %ad %s' --date=short`
+- `git log v0.1.0..v0.2.0 --pretty=format:'- %s'`
+- `git log --oneline --decorate --graph`
