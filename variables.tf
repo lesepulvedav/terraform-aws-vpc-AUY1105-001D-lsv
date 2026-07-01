@@ -17,11 +17,18 @@ variable "cidr_block" {
   default     = "10.0.0.0/16"
 }
 
-variable "availability_zones" {
+variable "availability_zone_a" {
   description = "Lista de zonas de disponibilidad para las subnets"
-  type        = list(string)
-  default     = ["us-east-1a", "us-east-1b"]
+  type        = string
+  default     = "us-east-1a"
 }
+
+variable "availability_zone_b" {
+  description = "Lista de zonas de disponibilidad para las subnets"
+  type        = string
+  default     = "us-east-1b"
+}
+
 # ─── SUBNETS ───
 
 variable "subnetpublic1_cidr" {
